@@ -4,7 +4,7 @@ const Todo = props => {
   return (
     <div>
     <span>{props.text}</span>
-    <button onClick={this.props.delete}>DELETE<button/>
+    <button onClick={() => props.delete(props.text)}>DELETE<button/>
     </div>
     )
 }
